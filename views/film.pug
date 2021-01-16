@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Películas
+        link(rel="stylesheet", href="style.css")
+    body
+        header
+            h1(class="global") Films
+        h2=`Tittle: ${titulo}`
+        h3=`Director: ${director}`
+        h4=`Description: ${descripcion}`
+        img(src=imagen, alt="Imagen de la Película")
+        br
+        br
+        form(class="formulario" action="/", method="GET")
+            input(type="submit", value=" Home ")

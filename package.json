@@ -1,0 +1,25 @@
+{
+  "name": "api_pelis",
+  "version": "1.0.0",
+  "description": "Probando la API de Pelis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javierhu89/API_Pelis.git"
+  },
+  "author": "JaVi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javierhu89/API_Pelis/issues"
+  },
+  "homepage": "https://github.com/Javierhu89/API_Pelis#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pug": "^3.0.0"
+  }
+}

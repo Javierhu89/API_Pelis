@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home
+        link(rel="stylesheet", href="style.css")
+    body
+        header
+            h1(class="global") Films
+        img(id="estrella" src="home.jpg", alt="Imagen de la construcción de la Estrella de la muertes")
+        form(class="formulario" action="./film/", method="GET")
+            input(id="peli" class="cuadro" type="text" name="pelicula" required)
+            input(id="buscador" class="cuadro" type="submit", value=" Buscar ")
