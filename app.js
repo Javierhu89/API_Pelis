@@ -11,7 +11,7 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', news.getHome);
-app.get('/film/:pelicula?', news.getFilm);
+app.post('/film/', urlencodedParser, news.getFilm);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

@@ -7,7 +7,7 @@ exports.getHome = (req,res) => {
     res.render('home')
 };
 exports.getFilm = (req,res) => {
-    fetch(`http://www.omdbapi.com/?t=${req.query.pelicula}&apikey=${apikey}`)
+    fetch(`http://www.omdbapi.com/?t=${req.body.pelicula}&apikey=${apikey}`)
     .then(peli => peli.json())
     .then(data => {
         console.log(data) 
