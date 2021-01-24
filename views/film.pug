@@ -8,9 +8,13 @@ html(lang="en")
     body
         header
             h1(class="global") Films
-        h2=`Tittle: ${titulo}`
-        h3=`Director: ${director}`
-        h4=`Description: ${descripcion}`
-        img(id="poster", src=imagen, alt="Imagen de la Película")
-        form(class="formulario" action="/", method="GET")
-            input(class="cuadro" type="submit", value=" Home ")
+        div(id="peliculas")
+            - let i = 0;
+            while i < Longitud
+                div(class=`pelicula`)
+                    h1=Resultados[i].Title
+                    h2=Resultados[i].Year
+                    h2=Resultados[i].imdbID
+                    h2=Resultados[i].Type
+                    img(src=Resultados[i++].Poster, alt="Imagen de la Película")     
+        

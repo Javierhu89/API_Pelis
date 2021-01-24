@@ -2,7 +2,7 @@ const express = require ('express');
 const app = express();
 const news = require ('./modules/news')
 const port = 3000;
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 let bodyParser = require('body-parser');
 let urlencodedParser = bodyParser.urlencoded({ extended: false })
